@@ -1,0 +1,60 @@
+/* Basic style */
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../polices/roboto/Roboto-Medium.ttf');
+}
+@font-face {
+	font-family: 'Pacifico';
+	src: url('../polices/pacifico/Pacifico.ttf');
+}
+
+.containerHeader {
+	background-color: black;
+	min-height: 240px;
+	vertical-align: middle;
+}
+.headerTitle {
+	text-align: center;
+	font-size: 72px;
+	padding: 50px 0 0 0;
+	font-family: 'Pacifico', Arial, serif;
+	color: white;
+}
+.containerSection {
+	display: flex;
+	text-align: center;
+}
+.sectionTitle {
+	color: white;
+	font-family: 'Roboto-Medium', Arial, serif;
+	padding: 15px 0 0 0;
+}
+.simpleQuote {
+	background-image: url("../img/crystalball.jpg");
+}
+.complexQuote {
+	background-image: url("../img/magic.jpg");
+}
+.simpleQuote, .complexQuote {
+	height: 640px;
+	border-style: solid;
+	background-color: black;
+	background-size: contain;
+}
+#simpleQuoteDisplay, #complexQuoteDisplay {
+	/*display: flex;*/
+	align-items: center;
+	color: #F5F5DC;
+	font-size: 18px;
+}
+#simpleQuoteDisplay {
+	height: 310px;
+}
+#complexQuoteDisplay {
+	min-height: 260px;
+}
+
+#listNumber, #listChoice {
+	margin: 0 0 15px 0;
+}

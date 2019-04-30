@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Générateur de citations</title>
+    <meta name="description" content="Générateur de citations">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header class="containerHeader">
+        <h1 class="headerTitle">Bienvenue sur votre générateur de citation</h1>
+    </header>
+   
+    <section class="containerSection">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 simpleQuote">
+            <h3 class="sectionTitle">Générer une citation aléatoire</h3>
+                <div id="simpleQuoteDisplay"></div>
+                <button class="btn btn-primary" onclick="simpleQuote()">Recevoir une prédiction</button>
+        </div>
+    
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 complexQuote">
+            <h3 class="sectionTitle">Générer une citation configurable</h3>
+                <form name="formselect">
+                    <select id="listNumber" size=1>
+                        <option value=0>Veuillez séléctionner le nombre de citations à générer</option>
+                        <option value=1>1 citation</option>
+                        <option value=2>2 citations</option>
+                        <option value=3>3 citations</option>
+                        <option value=4>4 citations</option>
+                        <option value=4>5 citations</option>
+                    </select>
+                    <select id="listChoice" size=1>
+                        <option value=0>Veuillez séléctionner le type de citation</option>
+                        <option value=1>Incantation d'attaque</option>
+                        <option value=2>Incantation défensive</option>
+                    </select>
+                </form>
+                    <div id="complexQuoteDisplay"></div>
+                    <button class="btn btn-primary" onclick="complexQuote()">Lancer le type d'incantation(s) choisie(s)</button>
+                      <button class="btn btn-danger" onclick="endQuote()">Arrêter les incantations</button>
+        </div>
+    </section>
+        
+    <footer> 
+    </footer>
+
+        <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+              integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+              crossorigin="anonymous"></script>
+    	<!-- Javascript perso -->
+    <script src="js/SimpleQuote.js"></script>
+    <script src="js/ComplexQuote.js"></script>
+    <script>        
+    </script>
+
+  </body>
+
+</html>
