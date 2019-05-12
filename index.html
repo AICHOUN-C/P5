@@ -22,30 +22,30 @@
     <section class="containerSection">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 simpleQuote">
             <h3 class="sectionTitle">Générer une citation aléatoire</h3>
-                <div id="simpleQuoteDisplay"></div>
-                <button class="btn btn-primary" onclick="simpleQuote()">Recevoir une prédiction</button>
+            <div id="simpleQuoteDisplay">
+                <p id="paraQuote" class="paragraph"></p>
+            </div>
+            <button class="btn btn-primary" onclick="simpleQuote()">Recevoir une prédiction</button>
         </div>
     
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 complexQuote">
             <h3 class="sectionTitle">Générer une citation configurable</h3>
-                <form name="formselect">
-                    <select id="listNumber" size=1>
-                        <option value=0>Veuillez séléctionner le nombre de citations à générer</option>
-                        <option value=1>1 citation</option>
-                        <option value=2>2 citations</option>
-                        <option value=3>3 citations</option>
-                        <option value=4>4 citations</option>
-                        <option value=4>5 citations</option>
-                    </select>
-                    <select id="listChoice" size=1>
-                        <option value=0>Veuillez séléctionner le type de citation</option>
-                        <option value=1>Incantation d'attaque</option>
-                        <option value=2>Incantation défensive</option>
-                    </select>
-                </form>
-                    <div id="complexQuoteDisplay"></div>
-                    <button class="btn btn-primary" onclick="complexQuote()">Lancer le type d'incantation(s) choisie(s)</button>
-                      <button class="btn btn-danger" onclick="endQuote()">Arrêter les incantations</button>
+            <select id="listNumber" size=1>
+                <option value=0>Veuillez séléctionner le nombre de citations à générer</option>
+                <option value=1>1 citation</option>
+                <option value=2>2 citations</option>
+                <option value=3>3 citations</option>
+                <option value=4>4 citations</option>
+                <option value=4>5 citations</option>
+            </select>
+            <select id="listChoice" size=1>
+                <option value=0>Veuillez séléctionner le type de citation</option>
+                <option value=1>Incantation d'attaque</option>
+                <option value=2>Incantation défensive</option>
+            </select>
+            <div id="complexQuoteDisplay"></div>
+            <button class="btn btn-primary" onclick="complexQuote()">Lancer le type d'incantation(s) choisie(s)</button>
+            <button class="btn btn-danger" onclick="clearQuote()">Arrêter les incantations</button>
         </div>
     </section>
         
@@ -59,9 +59,6 @@
     	<!-- Javascript perso -->
     <script src="js/SimpleQuote.js"></script>
     <script src="js/ComplexQuote.js"></script>
-    <script>        
-    </script>
-
   </body>
 
 </html>

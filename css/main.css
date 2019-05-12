@@ -45,7 +45,7 @@
 #simpleQuoteDisplay, #complexQuoteDisplay {
 	/*display: flex;*/
 	align-items: center;
-	color: #F5F5DC;
+	color: black;
 	font-size: 18px;
 }
 #simpleQuoteDisplay {
@@ -54,7 +54,25 @@
 #complexQuoteDisplay {
 	min-height: 260px;
 }
-
 #listNumber, #listChoice {
 	margin: 0 0 15px 0;
+}
+#paraQuote {
+	align-items: center;
+}
+.paragraph {
+	background-color: rgb(255,255,255,0.4);
+}
+
+
+/* Styles pour les Smartphone*/
+
+@media (max-width: 767px) {
+	.containerSection {
+		display: flex;
+		flex-direction: column; 	
+	}
+	.btn {
+		margin: 0 0 15px 0;
+	}
 }

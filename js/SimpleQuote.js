@@ -37,12 +37,11 @@ const quotesThirdPart = [
 	'trouver un trésort!'
 ]
 
-
-
 function simpleQuote() {
 	let firstPart = quotesFirstPart[Math.floor(Math.random() * (quotesFirstPart.length))];
 	let secondPart = quotesSecondPart[Math.floor(Math.random() * (quotesSecondPart.length))];
 	let thirdPart = quotesThirdPart[Math.floor(Math.random() * (quotesThirdPart.length))];
 	let fullQuote = firstPart + secondPart + thirdPart;
-	document.getElementById('simpleQuoteDisplay').innerHTML = fullQuote;
+	//append fullquote to para with id="paraquote"
+	document.getElementById('paraQuote').innerHTML = fullQuote;
 }
